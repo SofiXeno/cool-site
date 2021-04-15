@@ -7,18 +7,23 @@
     <link rel="stylesheet" href="stylesheets/bootstrap-grid.css">
     <link rel="stylesheet" href="stylesheets/bootstrap-reboot.css">
     <link rel='stylesheet' href="stylesheets/style.css"/>
+    <link rel='stylesheet' href="stylesheets/main.css"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+
 
     <title>Cool site by Sofia Xenofontova</title>
-    <link rel='stylesheet' href='/stylesheets/style.css'/>
 
 </head>
 <body>
 
 
 <!--Navbar -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #20c997;">
-    <a class="navbar-brand" href="#">Крутий сайт</a>
+<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-faded" style="background-color: #20c997;">
+    <a class="navbar-brand" href="#">
+        <img src="images/giphy.gif" width="26" height="26" class="d-inline-block align-top" alt="">
+        Крутий сайт</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,32 +39,142 @@
             <li class="nav-item active">
                 <a class="nav-link" href="#">Про нас</a>
             </li>
-            <ul class="nav justify-content-end">
-                <li class="nav-item active dropdown">
-                    <a class="nav-link dropdown-toggle ml-auto" href="#" id="navbarDropdownMenuLink"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Мова
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-            </ul>
+            <li class="nav-item active ml-auto dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-gb"> </span> EN</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown09">
+                    <a class="dropdown-item" href="#ua"><span class="flag-icon flag-icon-ua"> </span> UA</a>
+                </div>
+            </li>
         </ul>
     </div>
 </nav>
 <!--/.Navbar -->
 
 
-<script src="/bootstrap/jquery-3.5.1.min.js"></script>
-<script src="/bootstrap/popper.min.js"></script>
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+    <!-- Индикаторы -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="img-fluid" src="images/altumcode-oZ61KFUQsus-unsplash.jpg" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img class="img-fluid" src="images/altumcode-TUnXXhb2-a8-unsplash.jpg" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img class="img-fluid" src="images/michael-dziedzic--Rc6usOigMk-unsplash.jpg" alt="...">
+        </div>
+    </div>
+    <!-- Элементы управления -->
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Предыдущий</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Следующий</span>
+    </a>
+</div>
 
-<script src="/bootstrap/bootstrap.bundle.js"></script>
-<script src="/bootstrap/bootstrap.bundle.min.js"></script>
 
-<!--  <script src="/js/main.js"></script>-->
+<hr/>
+
+
+<div class="row">
+    <div class="col-sm-8">
+
+        <div class="blog-card">
+            <div class="meta">
+                <div class="photo"
+                     style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
+                <ul class="details">
+                    <li class="author"><a href="#">John Doe</a></li>
+                    <li class="date">Aug. 24, 2015</li>
+                    <li class="tags">
+                        <ul>
+                            <li><a href="#"> #Learn</a></li>
+                            <li><a href="#">#Code</a></li>
+                            <li><a href="#">#HTML</a></li>
+                            <li><a href="#">#CSS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="description">
+                <h1>Learning to Code</h1>
+                <h2>Opening a door to the future</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati
+                    enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+                <p class="read-more">
+                    <a href="#">Read More</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-sm-4" style="padding-right: 3%">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-offset-3">
+                    <form id="contact-form" class="form" action="#" method="POST" role="form">
+                        <div class="form-group">
+                            <label class="form-label" for="name">ПІБ</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Прізвище та Ім'я" tabindex="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" tabindex="2" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Моб. телефон</label>
+                            <input type="text" class="form-control bfh-phone" id="phone" name="phone" placeholder="+ (380)" tabindex="3" data-format="+(380) ddd-dd-dd" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Заявка</label>
+                            <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Текст Вашої заявки..." tabindex="4" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-start-order">Надіслати заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #20c997">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">Крутий сайт</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+<script src="bootstrap/jquery-3.5.1.min.js"></script>
+<script src="bootstrap/popper.min.js"></script>
+
+<script src="bootstrap/bootstrap.bundle.js"></script>
+<script src="bootstrap/bootstrap.bundle.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
+
+<script src="javascripts/main.js"></script>
 
 </body>
 </html>
