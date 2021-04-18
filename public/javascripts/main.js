@@ -4,6 +4,13 @@ $(document).ready(function() {
     jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000  // 2 seconds
 });
 
+var activeNavItem = $('.nav-item');
+
+// activeNavItem.click(function(){
+//     activeNavItem.removeClass('active');
+//     $(this).addClass('active');
+// });
+
 $(document).ready(function() {
     // Test for placeholder support
     $.support.placeholder = (function(){

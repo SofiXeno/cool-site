@@ -6,19 +6,22 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css">
     <link rel="stylesheet" href="stylesheets/bootstrap-grid.css">
     <link rel="stylesheet" href="stylesheets/bootstrap-reboot.css">
-    <link rel='stylesheet' href="stylesheets/style.css"/>
-    <link rel='stylesheet' href="stylesheets/main.css"/>
+    <link rel='stylesheet' href="stylesheets/style.css">
+    <link rel='stylesheet' href="stylesheets/main.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
 
 
-    <title>Cool site by Sofia Xenofontova</title>
+    <title><%= lang.title%></title>
 
 </head>
 <body>
 
 
+<!--Navbar -->
+<%- include('navbar', {lang:lang, page:'/about', active_page: 'about'}) %>
+<!--/.Navbar -->
 
 
 <hr/>
@@ -28,15 +31,15 @@
     <div class="col-sm-8">
         <div class="container" id="about-us">
             <div class="about-title clearfix">
-                <h1 style="color: #20c997;">Про Крутий сайт</h1>
-                <h6>© Ксенофонтова Софія</h6>
+                <h1 style="color: #20c997;"><%= lang.aboutContent.text1%></h1>
+                <h6><%= lang.aboutContent.text2%></h6>
                 <hr id="divide">
                 <blockquote class="blockquote text-right">
-                  <p class="mb-0">Балаканина нічого не варта. Покажіть мені код.</p>
-                  <footer class="blockquote-footer"><cite title="Source Title">Лінус Торвальдс</cite></footer>
+                  <p class="mb-0"><%= lang.aboutContent.text3%></p>
+                  <footer class="blockquote-footer"><cite title="Source Title"><%= lang.aboutContent.text4%></cite></footer>
                 </blockquote>
 
-                <p>Опануйте будь яку мову програмування за короткий час просто сидячи вдома! Приєднуйтесь вже зараз! Наші тренінги чекають саме на вас!</p>
+                <p><%= lang.aboutContent.text5%></p>
 
 
             </div>
@@ -44,6 +47,7 @@
     </div>
     <div class="col-sm-4" style="padding-right: 3%">
 
+        <%- include('form', {lang:lang}) %>
 
     </div>
 </div>
@@ -52,8 +56,8 @@
 <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: #20c997">
-        © 2020 Copyright:
-        <a class="text-dark" href="https://mdbootstrap.com/">Крутий сайт</a>
+        © 2021 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/"><%= lang.title%></a>
     </div>
     <!-- Copyright -->
 </footer>

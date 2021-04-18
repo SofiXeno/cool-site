@@ -1,10 +1,11 @@
 {
 	"title": "Cool site",
-	"menu": {
-		"home": "Home",
+	"localeName": "en",
+
+	"menuNav": {
+		"index": "Home",
 		"trainings": "Trainings",
-		"about": "About us",
-		"admin": "Admin"
+		"about": "About us"
 	},
 	"homeContent": {
 		"text1": "Welcome to our site!",

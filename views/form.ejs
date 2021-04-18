@@ -1,34 +1,34 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-            <h2>Нова заявка</h2>
+            <h2><%= lang.form.header%></h2>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-offset-3">
             <form id="contact-form" class="form" action="#" method="POST" role="form">
                 <div class="form-group">
-                    <label class="form-label" for="name">ПІБ</label>
+                    <label class="form-label" for="name"><%= lang.form.name.label%></label>
                     <input type="text" class="form-control" id="name" name="name"
-                           placeholder="Прізвище та Ім'я" tabindex="1" required>
+                           placeholder="<%= lang.form.name.placeholder%>" tabindex="1" required>
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="email">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                    <label class="form-label" for="email"><%= lang.form.email.label%></label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="<%= lang.form.email.placeholder%>"
                            tabindex="2" required>
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="subject">Моб. телефон</label>
+                    <label class="form-label" for="subject"><%= lang.form.phone.label%></label>
                     <input type="text" class="form-control bfh-phone" id="phone" name="phone"
-                           placeholder="+ (380)" tabindex="3" data-format="+(380) ddd-dd-dd" required>
+                           placeholder="<%= lang.form.phone.placeholder%>" tabindex="3" data-format="+(380) ddd-dd-dd" required>
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="message">Заявка</label>
+                    <label class="form-label" for="message"><%= lang.form.textarea.label%></label>
                     <textarea rows="5" cols="50" name="message" class="form-control" id="message"
-                              placeholder="Текст Вашої заявки..." tabindex="4" required></textarea>
+                              placeholder="<%= lang.form.textarea.placeholder%>" tabindex="4" required></textarea>
                 </div>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-start-order">Надіслати заявку</button>
+                    <button type="submit" class="btn btn-start-order"><%= lang.form.button%></button>
                 </div>
             </form>
         </div>
