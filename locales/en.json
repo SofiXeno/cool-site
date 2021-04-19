@@ -2,6 +2,12 @@
 	"title": "Cool site",
 	"localeName": "en",
 
+	"application": {
+		"confirmed": "Congratulations! Your request has been confirmed automatically",
+		"need_confirmation": "To confirm the application, follow the link"
+	},
+
+
 	"adminNav": {
 		"title" : "Admin",
 		"add": "Add training"
@@ -94,6 +100,13 @@
 		"showMore": "Read more",
 		"showLess": "Hide details"
 	},
+
+
+
+
+
+
+
 
 
 
