@@ -2,6 +2,41 @@
   "title": "Крутий сайт",
   "localeName": "ua",
 
+  "adminNav": {
+    "title" : "Адмін",
+    "add": "Додати тренінг"
+  },
+
+  "adminContent": {
+    "training_list": "Список активних тренінгів",
+    "applications_list": "Список заявок"
+
+  },
+
+  "adminModal": {
+    "header": "Додати новий тренінг",
+
+    "name": "Назва тренінгу",
+    "placeholder_name": "Введіть назву тренінгу",
+
+    "about": "Кілька слів про майбутній тренінг",
+    "placeholder_about": "Введіть щось",
+
+    "author": "Автор",
+    "placeholder_author": "Хто автор тренінгу",
+
+    "date": "Дата",
+    "placeholder_date": "Введіть дату початку тренінгу",
+
+    "text": "Опис",
+    "placeholder_text": "Введіть основний опис тренінгу"
+  },
+
+  "adminButtons": {
+    "clear": "Очистити",
+    "done": "Готово!"
+  },
+
 
   "menuNav": {
     "index": "Головна",

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap-grid.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap-reboot.css">
+    <link rel='stylesheet' href="stylesheets/style.css">
+    <link rel='stylesheet' href="stylesheets/main.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+
+
+    <title><%= lang.title %></title>
+
+</head>
+<body>
+
+<!--Navbar -->
+<%- include('admin_nav', {lang:lang}) %>
+<!--/.Navbar -->
+
+<hr/>
+
+
+<div class="row">
+    <div class="col-sm-6">
+
+        <div class="container" id="landing-page">
+тут почему то хедер не работает
+            <h1 style="color: #0f6674;"><%= lang.adminContent.training_list%></h1>
+            <hr id="divide">
+
+            <div class="blog-card">
+                <div class="meta">
+
+                    <div class="photo"></div>
+                    <ul class="details">
+                        <li class="author"><a href="#">John Doe</a></li>
+                        <li class="date">Aug. 24, 2015</li>
+                        <li class="tags">
+                            <ul>
+                                <li><a href="#"> #Learn</a></li>
+                                <li><a href="#">#Code</a></li>
+                                <li><a href="#">#HTML</a></li>
+                                <li><a href="#">#CSS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="description">
+                    <h1>Learning to Code</h1>
+                    <h2>Opening a door to the future</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati
+                        enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+                    <p class="read-more">
+                        <a href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="col-sm-6" style="padding-right: 3%">
+        <div class="container" id="landing-page">
+            тут тоже хедер не работает
+            <h1 style="color: #0f6674;"><%= lang.adminContent.applications_list %></h1>
+            <hr id="divide">
+        </div>
+    </div>
+</div>
+
+
+<footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #20c997">
+        © 2021 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/"><%= lang.title %></a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+<script src="bootstrap/jquery-3.5.1.min.js"></script>
+<script src="bootstrap/popper.min.js"></script>
+
+<script src="bootstrap/bootstrap.bundle.js"></script>
+<script src="bootstrap/bootstrap.bundle.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
+
+<script src="javascripts/main.js"></script>
+
+</body>
+</html>

@@ -2,6 +2,42 @@
 	"title": "Cool site",
 	"localeName": "en",
 
+	"adminNav": {
+		"title" : "Admin",
+		"add": "Add training"
+	},
+
+	"adminContent": {
+		"training_list": "Active trainings list",
+		"applications_list": "Applications list"
+
+	},
+
+	"adminModal": {
+		"header": "Add new training",
+
+		"name": "Training name",
+		"placeholder_name": "Write new training name",
+
+		"about": "Couple of words about the future training",
+		"placeholder_about": "Write something",
+
+		"author": "Author",
+		"placeholder_author": "Who is the author of the training",
+
+		"date": "Date",
+		"placeholder_date": "Enter a start date",
+
+		"text": "Description",
+		"placeholder_text": "Write main training description"
+	},
+
+	"adminButtons": {
+		"clear": "Clear",
+		"done": "Done!"
+	},
+
+
 	"menuNav": {
 		"index": "Home",
 		"trainings": "Trainings",

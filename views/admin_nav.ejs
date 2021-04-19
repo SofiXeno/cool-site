@@ -1,0 +1,67 @@
+<!--Navbar -->
+<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-faded" style="background-color: #20c997;">
+    <a class="navbar-brand" href="#">
+        <img src="images/giphy.gif" width="26" height="26" class="d-inline-block align-top" alt="">
+        <%= lang.adminNav.title %></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+            <li class="nav-item active">
+                <button data-toggle="modal" data-target="#new-training-modal" type="button" class="btn-warning" id="add-new-training"><%= lang.adminNav.add%></button>
+            </li>
+
+            <li class="nav-item <%= lang.localeName === "en" ? 'active' : '' %>">
+                <a class="nav-link" href="admin?lang=en"><span class="flag-icon flag-icon-gb"> </span> EN</a></li>
+            <li class="nav-item <%= lang.localeName === "ua" ? 'active' : '' %>">
+                <a class="nav-link" href="admin?lang=ua"><span class="flag-icon flag-icon-ua"> </span> UA</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--/.Navbar -->
+
+
+<div id="new-training-modal"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel"><%=lang.adminModal.header%></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="name"><%=lang.adminModal.name%></label>
+                    <input type="text" class="form-control" id="name" aria-describedby="subjectHelp" placeholder="<%=lang.adminModal.placeholder_name%>">
+                </div>
+                <div class="form-group">
+                    <label for="about"><%=lang.adminModal.about%></label>
+                    <input type="text" class="form-control" id="about" aria-describedby="subjectHelp" placeholder="<%=lang.adminModal.placeholder_about%>">
+                </div>
+                <div class="form-group">
+                    <label for="author"><%=lang.adminModal.author%></label>
+                    <input type="text" class="form-control" id="author" aria-describedby="subjectHelp" placeholder="<%=lang.adminModal.placeholder_author%>">
+                </div>
+                <div class="form-group">
+                    <label for="date"><%=lang.adminModal.date%></label>
+                    <input type="date" class="form-control" id="date" aria-describedby="subjectHelp" placeholder="<%=lang.adminModal.placeholder_date%>">
+                </div>
+                <div class="form-group">
+                    <label for="text"><%=lang.adminModal.text%></label>
+                    <textarea class="textarea resize-ta form-control" type="text" id="main_modal_text" aria-describedby="textHelp" placeholder="<%=lang.adminModal.placeholder_text%>"></textarea>
+                </div>
+            </div>
+
+            <div class="modal-footer justify-content-center">
+                <button id="new-training-clear" type="button" class="btn btn-secondary"><%=lang.adminButtons.clear%></button>
+                <!--                <button id="paste_new_email" type="button" class="btn btn-warning">Вставити шаблон</button>-->
+                <button id="send_training"  class="btn" style="background-color: #20c997;"><%=lang.adminButtons.done%></button>
+            </div>
+        </div>
+    </div>
+</div>

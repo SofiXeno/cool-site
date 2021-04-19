@@ -238,6 +238,26 @@ textarea {
     text-transform: uppercase;
 }
 
+#add-new-training {
+    background-size: 300% 100%;
+    cursor: pointer;
+    height: 35px;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-color: yellow;
+    /*background: 0 0 #ffffff;*/
+    /*border: 1px solid #2f323a;*/
+    border-radius: 30px;
+    color: #2f323a;
+    font-family: Geneva, sans-serif;
+    text-transform: uppercase;
+}
+
 .btn-start-order {
     font-size: 16px;
     font-weight: bold;
@@ -269,8 +289,8 @@ textarea {
     transition: all 0.25s ease 0s;
 }
 
-.btn-start-order:hover, #more-about-trainings:hover {
-    color: white;
+.btn-start-order:hover, #more-about-trainings:hover, #add-new-training:hover {
+    color: #20c997;
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
