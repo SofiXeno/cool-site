@@ -22,11 +22,17 @@
 	"adminModal": {
 		"header": "Add new training",
 
-		"name": "Training name",
-		"placeholder_name": "Write new training name",
+		"titleEn": "Training name EN",
+		"placeholder_titleEn": "Write new training name EN",
 
-		"about": "Couple of words about the future training",
-		"placeholder_about": "Write something",
+		"subtitleEn": "Couple of words about the future training EN",
+		"placeholder_subtitleEn": "Write something EN",
+
+		"titleUa": "Training name UA",
+		"placeholder_titleUa": "Write new training name UA",
+
+		"subtitleUa": "Couple of words about the future training UA",
+		"placeholder_subtitleUa": "Write something UA",
 
 		"author": "Author",
 		"placeholder_author": "Who is the author of the training",
@@ -34,8 +40,17 @@
 		"date": "Date",
 		"placeholder_date": "Enter a start date",
 
-		"text": "Description",
-		"placeholder_text": "Write main training description"
+		"smallTextEn": "Description EN",
+		"placeholder_smallTextEn": "Write main description EN",
+
+		"bigTextEn": "Small description EN",
+		"placeholder_bigTextEn": "Write small training description EN",
+
+		"smallTextUa": "Description UA",
+		"placeholder_smallTextUa": "Write main description UA",
+
+		"bigTextUa": "Small description UA",
+		"placeholder_bigTextUa": "Write small training description UA"
 	},
 
 	"adminButtons": {

@@ -22,11 +22,17 @@
   "adminModal": {
     "header": "Додати новий тренінг",
 
-    "name": "Назва тренінгу",
-    "placeholder_name": "Введіть назву тренінгу",
+    "titleEn": "Назва тренінгу АНГ",
+    "placeholder_titleEn": "Введіть назву тренінгу АНГ",
 
-    "about": "Кілька слів про майбутній тренінг",
-    "placeholder_about": "Введіть щось",
+    "subtitleEn": "Кілька слів про майбутній тренінг АНГ",
+    "placeholder_subtitleEn": "Введіть щось АНГ",
+
+    "titleUa": "Назва тренінгу УКР",
+    "placeholder_titleUa": "Введіть назву тренінгу УКР",
+
+    "subtitleUa": "Кілька слів про майбутній тренінг УКР",
+    "placeholder_subtitleUa": "Введіть щось УКР",
 
     "author": "Автор",
     "placeholder_author": "Хто автор тренінгу",
@@ -34,8 +40,17 @@
     "date": "Дата",
     "placeholder_date": "Введіть дату початку тренінгу",
 
-    "text": "Опис",
-    "placeholder_text": "Введіть основний опис тренінгу"
+    "smallTextEn": "Короткий опис АНГ",
+    "placeholder_smallTextEn": "Введіть короткий опис тренінгу АНГ",
+
+    "smallTextUa": "Короткий опис УКР",
+    "placeholder_smallTextUa": "Введіть короткий опис тренінгу УКР",
+
+    "bigTextEn": "Опис АНГ",
+    "placeholder_bigTextEn": "Введіть основний опис тренінгу АНГ",
+
+    "bigTextUa": "Опис УКР",
+    "placeholder_bigTextUa": "Введіть основний опис тренінгу УКР"
   },
 
   "adminButtons": {
