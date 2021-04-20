@@ -1,0 +1,33 @@
+{
+    "domain": "cooltraining.com.ua",
+    "adminConfirmation": false,
+
+    "menuTabs": [
+        {
+            "url": "/",
+            "key": "index"
+        },
+        {
+            "url": "/trainings",
+            "key": "trainings"
+        },
+        {
+            "url": "/about",
+            "key": "about"
+        },
+        {
+            "url": "/admin",
+            "key": "admin"
+        },{
+            "url": "/application_success",
+            "key": "application_success"
+        }
+
+    ],
+
+    "colors": {
+        "menuColor": "#17b04f",
+        "tabsColor": "#6c3a8a",
+        "activeTabColor": "#ffffff"
+    }
+}
