@@ -291,7 +291,7 @@ textarea {
 }
 
 .btn-start-order:hover, #more-about-trainings:hover, #add-new-training:hover {
-    color: #20c997;
+    color: white;
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;

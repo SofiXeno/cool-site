@@ -68,11 +68,16 @@
     "clear": "Clear",
     "done": "Done!"
   },
+
+
   "menuNav": {
     "index": "Home",
     "trainings": "Trainings",
     "about": "About us"
   },
+
+
+
   "homeContent": {
     "text1": "Welcome to our site!",
     "text2": "Which programming language is best to learn in 2021?",

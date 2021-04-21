@@ -18,15 +18,18 @@
         {
             "url": "/admin",
             "key": "admin"
-        },{
+        },
+        {
             "url": "/application_success",
             "key": "application_success"
         }
+
 
     ],
 
     "colors": {
         "menuColor": "#20c997",
+        "red": "#ff0000",
         "tabsColor": "#6c3a8a",
         "activeTabColor": "#ffffff"
     }
