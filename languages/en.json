@@ -4,11 +4,27 @@
   "application": {
     "confirmed": "Congratulations! Your request has been confirmed automatically.",
     "need_confirmation": "To confirm the application, check your e-mail.",
-    "confirm_success": "Your request was confirmed succesfully."
+    "confirm_success": "Your request was confirmed succesfully.",
+    "fail" : "The E-Mail you've entered doesn't exist."
   },
   "adminNav": {
     "title": "Admin",
     "add": "Add training"
+  },
+  "deleteModal": {
+    "header": "Deletion",
+    "text": "You sure you want to delete?",
+    "button": "Yes"
+  },
+  "applicationCard" : {
+    "header" : "User application",
+    "name_surname": "Name & surname: ",
+    "phone": "Phone: ",
+    "email": "Email: ",
+    "text": "Application text: ",
+    "status": "Status: ",
+    "confirmed" : "confirmed",
+    "unconfirmed" : "awaiting confirmation"
   },
   "confirmationMessage" : "To confirm your request, please follow the link: ",
   "adminContent": {
@@ -17,16 +33,36 @@
   },
   "adminModal": {
     "header": "Add new training",
-    "name": "Training name",
-    "placeholder_name": "Write new training name",
-    "about": "Couple of words about the future training",
-    "placeholder_about": "Write something",
+
+    "titleEn": "Training name EN",
+    "placeholder_titleEn": "Write new training name EN",
+
+    "subtitleEn": "Couple of words about the future training EN",
+    "placeholder_subtitleEn": "Write something EN",
+
+    "titleUa": "Training name UA",
+    "placeholder_titleUa": "Write new training name UA",
+
+    "subtitleUa": "Couple of words about the future training UA",
+    "placeholder_subtitleUa": "Write something UA",
+
     "author": "Author",
     "placeholder_author": "Who is the author of the training",
+
     "date": "Date",
     "placeholder_date": "Enter a start date",
-    "text": "Description",
-    "placeholder_text": "Write main training description"
+
+    "smallTextEn": "Description EN",
+    "placeholder_smallTextEn": "Write main description EN",
+
+    "bigTextEn": "Small description EN",
+    "placeholder_bigTextEn": "Write small training description EN",
+
+    "smallTextUa": "Description UA",
+    "placeholder_smallTextUa": "Write main description UA",
+
+    "bigTextUa": "Small description UA",
+    "placeholder_bigTextUa": "Write small training description UA"
   },
   "adminButtons": {
     "clear": "Clear",
@@ -68,8 +104,8 @@
     },
     "phone": {
       "label": "Phone number",
-      "placeholder": "+ (380)",
-      "error": "Invalid phone number!"
+      "placeholder": "10 digits",
+      "error": "Invalid phone number! Please type 10 digits"
     },
     "textarea": {
       "label": "Application text",
@@ -87,65 +123,6 @@
   "trainings": {
     "showMore": "Read more",
     "showLess": "Hide details"
-  },
-  "admin": {
-    "main": {
-      "toForms": "Manage forms",
-      "toTrainings": "Manage trainings"
-    },
-    "forms": {
-      "button": {
-        "toAdmin": "To admin page",
-        "toFormsTable": "To form table"
-      },
-      "table": {
-        "title": "New forms",
-        "name": "Name",
-        "surname": "Surname",
-        "email": "Email",
-        "actions": "Actions"
-      },
-      "details": {
-        "name": "Name",
-        "surname": "Surname",
-        "email": "Email",
-        "phone": "Phone",
-        "addtext": "Additional text"
-      }
-    },
-    "trainings": {
-      "button": {
-        "toAdmin": "To admin page",
-        "toTrainingsTable": "To trainings table",
-        "addTraining": "Add training",
-        "send": "Send"
-      },
-      "table": {
-        "tableTitle": "Trainings",
-        "title": "Title",
-        "actions": "Actions",
-        "slogan": "Slogan",
-        "editB": "Edit",
-        "deleteB": "Delete",
-        "infoB": "Info",
-        "confirmB": "Confirm",
-        "rejectB": "Reject"
-      },
-      "form": {
-        "pageTitle": {
-          "add": "Adding training",
-          "update": "Updating training"
-        },
-        "title": "Title",
-        "slogan": "Slogan",
-        "description": "Description"
-      }
-    },
-    "table": {
-      "title": "Title",
-      "slogan": "Slogan",
-      "actions": "Actions"
-    }
   },
   "less_button": "Collapse",
   "more_button": "Details...",

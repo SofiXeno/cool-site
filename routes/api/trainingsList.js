@@ -5,7 +5,7 @@ router.get('/', async (req, res) => {
     return res.json(await Training.find())
 })
 
-router.post('/', async (req, res) => {
+router.post('/:lang', async (req, res) => {
     const training = new Training({
         en: {
             title: req.body.titleEn,
@@ -24,16 +24,18 @@ router.post('/', async (req, res) => {
     })
     try {
         await training.save()
-        res.redirect('/admin')
+        res.redirect(`/admin?lang=${req.params.lang}`)
     } catch (e) {
         return res.status(400).json(e)
     }
 })
 
-router.post('/delete/:id', async (req, res) => {
+router.post('/delete/:lang/:id', async (req, res) => {
     try{
-        await Training.deleteOne({_id:req.params.id})
-        res.redirect('/admin')
+        console.log(req.params.id)
+        const data = await Training.deleteOne({_id:req.params.id})
+        console.log(data)
+        res.redirect(`/admin?lang=${req.params.lang}`)
     }catch (e) {
         return res.json(e)
     }

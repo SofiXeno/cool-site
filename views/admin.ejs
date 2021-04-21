@@ -29,43 +29,36 @@
     <div class="col-sm-6">
 
         <div class="container" id="landing-page">
-            <h1 style="color: #179c74;"><%= lang.adminContent.training_list%></h1>
+            <h1 style="color: #179c74;"><%= lang.adminContent.training_list %></h1>
             <hr id="divide">
 
+            <% for (let i = 0; i < trainings.length; ++i) {%>
+                <%const tr = trainings[i]%>
+                <%const translated = tr[lang.localeName]%>
             <div class="blog-card">
 
                 <div class="meta">
-
-
                     <div class="photo"></div>
                     <ul class="details">
-                        <li class="author"><a href="#">John Doe</a></li>
-                        <li class="date">Aug. 24, 2015</li>
-                        <li class="tags">
-                            <ul>
-                                <li><a href="#"> #Learn</a></li>
-                                <li><a href="#">#Code</a></li>
-                                <li><a href="#">#HTML</a></li>
-                                <li><a href="#">#CSS</a></li>
-                            </ul>
-                        </li>
+                        <li class="author"><a href="#"><%=tr.author%></a></li>
+                        <li class="date"><%=tr.date.toLocaleDateString()%></li>
                     </ul>
                 </div>
                 <div class="description">
-                    <button type="button" data-toggle="modal" data-target="#delete-confirm-modal" class="close" aria-label="Close">
+                    <form method="post" action="trainingsList/delete/<%=lang.localeName%>/<%= tr._id %>" onsubmit="return confirm('<%=lang.deleteModal.text%>');">
+                    <button type="submit" class="close"
+                            aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h1>Learning to Code</h1>
-                    <h2>Opening a door to the future</h2>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati
-                        enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-                    <p class="read-more">
-                        <a href="#">Read More</a>
-                    </p>
+                    </form>
+                    <h1><%=translated.title%></h1>
+                    <h2><%=translated.subtitle%></h2>
+                    <p> <%=translated.smallText%></p>
+                    <p> <%=translated.bigText%></p>
+
                 </div>
             </div>
-
-
+        <%}%>
 
         </div>
 
@@ -74,51 +67,34 @@
         <div class="container" id="landing-page">
             <h1 style="color: #179c74;"><%= lang.adminContent.applications_list %></h1>
             <hr id="divide">
+            <% for(let i = 0; i < requests.length; i++){ %>
+                <% const req = requests[i] %>
+                <div class="card">
+                    <div class="card-header">
+                        <form method="post" action="requests/delete/<%=lang.localeName%>/<%= req._id %>" onsubmit="return confirm('<%=lang.deleteModal.text%>');">
+                        <button type="submit" class="close"
+                                aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </form>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><%= lang.applicationCard.name_surname %> <%= req.name %></h5>
+                        <p class="card-text"><%= lang.applicationCard.phone %> <%= req.phone %></p>
+                        <p class="card-text"><%= lang.applicationCard.email %> <%= req.email %></p>
+                        <p class="card-text"><%= lang.applicationCard.text %> <%= req.message %></p>
 
-            <div class="card">
-                <div class="card-header">
-                    <%=lang.applicationCard.header%>
-                    <button type="button" data-toggle="modal" data-target="#delete-confirm-modal" class="close" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    </div>
+                    <div class="card-footer" style="color: #179c74;">
+                        <%= lang.applicationCard.status %> <%= req.confirmed ? lang.applicationCard.confirmed : lang.applicationCard.unconfirmed %>
+
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title"><%=lang.applicationCard.name_surname%> sdfghj</h5>
-                    <p class="card-text"><%=lang.applicationCard.phone%> fghjk</p>
-                    <p class="card-text"><%=lang.applicationCard.email%> sdfgh</p>
-                    <p class="card-text"><%=lang.applicationCard.text%> sdfgh</p>
-
-                </div>
-                <div class="card-footer" style="color: #179c74;">
-                    <%= lang.applicationCard.status%> fghjk
-
-                </div>
-            </div>
-
+            <% } %>
 
         </div>
     </div>
 </div>
-
-<!-- modal for deletion  -->
-<div class="modal top fade" id="delete-confirm-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-     aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
-    <div class="modal-dialog modal-sm ">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"><%=lang.deleteModal.header%></h5>
-                <button id="close-delete-confirm" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body"><%=lang.deleteModal.text%></div>
-            <div class="modal-footer">
-                <button id="delete-confirm" type="button" class="btn btn-primary"><%=lang.deleteModal.button%></button>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->

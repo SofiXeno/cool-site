@@ -25,5 +25,10 @@ router.get('/confirmSuccess', async(req, res) => {
   res.render('application_success.ejs', {lang:lang, message:lang.application.confirm_success, colors:config.colors, menuTabs:config.menuTabs})
 })
 
+router.get('/fail', async(req, res) => {
+  const lang = selectLang(req.query.lang)
+  res.render('application_success.ejs', {lang:lang, message:lang.application.fail, colors:config.colors, menuTabs:config.menuTabs})
+})
+
 
 module.exports = router;

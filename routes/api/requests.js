@@ -59,17 +59,17 @@ router.post('/:lang', async (req, res) => {
             await transporter.sendMail(mailOptions);
             return res.redirect(`/needConfirm?lang=${req.params.lang || 'ua'}`)
         } catch (e) {
-            console.log(`Mailing finished with ${e.message}`);
-            return res.status(406).json({fail:true})
+            await Request.deleteOne({_id:doc._id})
+            return res.redirect(`/fail?lang=${req.params.lang || 'ua'}`)
         }
     }
     return res.redirect(`/confirmed?lang=${req.params.lang || 'ua'}`)
 })
 
-router.post('/delete/:id', async (req, res) => {
+router.post('/delete/:lang/:id', async (req, res) => {
     try {
         await Request.deleteOne({_id: req.params.id})
-        res.redirect('/admin')
+        res.redirect(`/admin?lang=${req.params.lang}`)
     } catch (e) {
         return res.json(e)
     }

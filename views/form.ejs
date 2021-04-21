@@ -1,34 +1,43 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-            <h2><%= lang.form.header%></h2>
+            <h2><%= lang.form.header %></h2>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-offset-3">
-            <form id="contact-form" class="form" action="/requests/<%=lang.localeName%>" method="POST" role="form">
+            <form id="contact-form" class="form" action="/requests/<%= lang.localeName %>" method="POST" role="form">
                 <div class="form-group">
-                    <label class="form-label" for="name"><%= lang.form.name.label%></label>
+                    <label class="form-label" for="name"><%= lang.form.name.label %></label>
                     <input type="text" class="form-control" id="name" name="name"
-                           placeholder="<%= lang.form.name.placeholder%>" tabindex="1" required>
+                           placeholder="<%= lang.form.name.placeholder %>" tabindex="1" required
+                           oninvalid="this.setCustomValidity('<%= lang.form.name.error %>')"
+                           oninput="this.setCustomValidity('')">
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="email"><%= lang.form.email.label%></label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="<%= lang.form.email.placeholder%>"
-                           tabindex="2" required>
+                    <label class="form-label" for="email"><%= lang.form.email.label %></label>
+                    <input type="email" class="form-control" id="email" name="email"
+                           placeholder="<%= lang.form.email.placeholder %>"
+                           tabindex="2" required oninvalid="this.setCustomValidity('<%= lang.form.email.error %>')"
+                           oninput="this.setCustomValidity('')">
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="subject"><%= lang.form.phone.label%></label>
+                    <label class="form-label" for="subject"><%= lang.form.phone.label %></label>
                     <input type="text" class="form-control bfh-phone" id="phone" name="phone"
-                           placeholder="<%= lang.form.phone.placeholder%>" tabindex="3" data-format="+(380) ddd-dd-dd" required>
+                           placeholder="<%= lang.form.phone.placeholder %>" tabindex="3" data-format="+(380) ddd-dd-dd"
+                           pattern="[0-9]{10}" required
+                           oninvalid="this.setCustomValidity('<%= lang.form.phone.error %>')"
+                           oninput="this.setCustomValidity('')">
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="message"><%= lang.form.textarea.label%></label>
+                    <label class="form-label" for="message"><%= lang.form.textarea.label %></label>
                     <textarea rows="5" cols="50" name="message" class="form-control" id="message"
-                              placeholder="<%= lang.form.textarea.placeholder%>" tabindex="4" required></textarea>
+                              placeholder="<%= lang.form.textarea.placeholder %>" tabindex="4" required
+                              oninvalid="this.setCustomValidity('<%= lang.form.textarea.error %>')"
+                              oninput="this.setCustomValidity('')"></textarea>
                 </div>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-start-order"><%= lang.form.button%></button>
+                    <button type="submit" class="btn btn-start-order"><%= lang.form.button %></button>
                 </div>
             </form>
         </div>

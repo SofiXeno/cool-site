@@ -4,10 +4,13 @@ const router = express.Router();
 const config = require('../config.json')
 const selectLang = require('./select-lang')
 
+const Training = require('../db/training')
+
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', async function(req, res, next) {
     const lan = selectLang(req.query.lang)
-    res.render('trainings.ejs',{menuTabs:config.menuTabs, lang: lan, colors:config.colors});
+    const training = (await Training.find()).reverse()
+    res.render('trainings.ejs',{menuTabs:config.menuTabs, lang: lan, colors:config.colors, trainings:training});
 });
 
 

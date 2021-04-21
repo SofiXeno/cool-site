@@ -1,5 +1,5 @@
 <!--Navbar -->
-<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-faded" style="background-color: <%=colors.menuColor%>;">
+<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-faded" style="background-color: <%= colors.menuColor %>;">
     <a class="navbar-brand" href="#">
         <img src="images/giphy.gif" width="26" height="26" class="d-inline-block align-top" alt="">
         <%= lang.adminNav.title %></a>
@@ -11,7 +11,8 @@
         <ul class="navbar-nav">
 
             <li class="nav-item active">
-                <button data-toggle="modal" data-target="#new-training-modal" type="button" class="btn-warning" id="add-new-training"><%= lang.adminNav.add%></button>
+                <button data-toggle="modal" data-target="#new-training-modal" type="button" class="btn-warning"
+                        id="add-new-training"><%= lang.adminNav.add %></button>
             </li>
 
             <li class="nav-item <%= lang.localeName === "en" ? 'active' : '' %>">
@@ -25,55 +26,75 @@
 <!--/.Navbar -->
 
 
-<div id="new-training-modal"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+<div id="new-training-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+     aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel"><%=lang.adminModal.header%></h4>
+                <h4 class="modal-title" id="myModalLabel"><%= lang.adminModal.header %></h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+            <form method="post" action="/trainingsList/<%=lang.localeName%>">
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="name"><%=lang.adminModal.titleUa%></label>
-                    <input type="text" class="form-control" id="name" aria-describedby="subjectHelp" placeholder="<%=lang.adminModal.placeholder_titleUa%>">
-                    <label for="name"><%=lang.adminModal.titleEn%></label>
-                    <input type="text" class="form-control" id="name" aria-describedby="subjectHelp" placeholder="<%=lang.adminModal.placeholder_titleEn%>">
+                    <label for="name"><%= lang.adminModal.titleUa %></label>
+                    <input type="text" name="titleUa" class="form-control" id="name" aria-describedby="subjectHelp"
+                           placeholder="<%= lang.adminModal.placeholder_titleUa %>"  required>
+                    <label for="name"><%= lang.adminModal.titleEn %></label>
+                    <input type="text" name="titleEn" class="form-control" id="name" aria-describedby="subjectHelp"
+                           placeholder="<%= lang.adminModal.placeholder_titleEn %>" required>
                 </div>
                 <div class="form-group">
-                    <label for="about"><%=lang.adminModal.subtitleUa%></label>
-                    <input type="text" class="form-control" id="about" aria-describedby="subjectHelp" placeholder="<%=lang.adminModal.placeholder_subtitleUa%>">
-                    <label for="about"><%=lang.adminModal.subtitleEn%></label>
-                    <input type="text" class="form-control" id="about" aria-describedby="subjectHelp" placeholder="<%=lang.adminModal.placeholder_subtitleEn%>">
+                    <label for="about"><%= lang.adminModal.subtitleUa %></label>
+                    <input type="text" name="subtitleUa" class="form-control" id="about" aria-describedby="subjectHelp"
+                           placeholder="<%= lang.adminModal.placeholder_subtitleUa %>" required>
+                    <label for="about"><%= lang.adminModal.subtitleEn %></label>
+                    <input type="text" name="subtitleEn" class="form-control" id="about" aria-describedby="subjectHelp"
+                           placeholder="<%= lang.adminModal.placeholder_subtitleEn %>" required>
                 </div>
                 <div class="form-group">
-                    <label for="author"><%=lang.adminModal.author%></label>
-                    <input type="text" class="form-control" id="author" aria-describedby="subjectHelp" placeholder="<%=lang.adminModal.placeholder_author%>">
+                    <label for="author"><%= lang.adminModal.author %></label>
+                    <input type="text" name="author" class="form-control" id="author" aria-describedby="subjectHelp"
+                           placeholder="<%= lang.adminModal.placeholder_author %>" required>
                 </div>
                 <div class="form-group">
-                    <label for="date"><%=lang.adminModal.date%></label>
-                    <input type="date" class="form-control" id="date" aria-describedby="subjectHelp" placeholder="<%=lang.adminModal.placeholder_date%>">
+                    <label for="date"><%= lang.adminModal.date %></label>
+                    <input type="date" name="date" class="form-control" id="date" aria-describedby="subjectHelp"
+                           placeholder="<%= lang.adminModal.placeholder_date %>" required>
                 </div>
                 <div class="form-group">
-                    <label for="text"><%=lang.adminModal.smallTextUa%></label>
-                    <textarea class="textarea resize-ta form-control" type="text" id="main_modal_text" aria-describedby="textHelp" placeholder="<%=lang.adminModal.placeholder_smallTextUa%>"></textarea>
-                    <label for="text"><%=lang.adminModal.smallTextEn%></label>
-                    <textarea class="textarea resize-ta form-control" type="text" id="main_modal_text" aria-describedby="textHelp" placeholder="<%=lang.adminModal.placeholder_smallTextEn%>"></textarea>
+                    <label for="text"><%= lang.adminModal.smallTextUa %></label>
+                    <textarea name="smallTextUa" class="textarea resize-ta form-control" type="text"
+                              id="main_modal_text" aria-describedby="textHelp"
+                              placeholder="<%= lang.adminModal.placeholder_smallTextUa %>" required></textarea>
+                    <label for="text"><%= lang.adminModal.smallTextEn %></label>
+                    <textarea name="smallTextEn" class="textarea resize-ta form-control" type="text"
+                              id="main_modal_text" aria-describedby="textHelp"
+                              placeholder="<%= lang.adminModal.placeholder_smallTextEn %>" required></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="text"><%=lang.adminModal.bigTextUa%></label>
-                    <textarea class="textarea resize-ta form-control" type="text" id="main_modal_text" aria-describedby="textHelp" placeholder="<%=lang.adminModal.placeholder_bigTextUa%>"></textarea>
-                    <label for="text"><%=lang.adminModal.bigTextEn%></label>
-                    <textarea class="textarea resize-ta form-control" type="text" id="main_modal_text" aria-describedby="textHelp" placeholder="<%=lang.adminModal.placeholder_bigTextEn%>"></textarea>
+                    <label for="text"><%= lang.adminModal.bigTextUa %></label>
+                    <textarea name="bigTextUa" class="textarea resize-ta form-control" type="text" id="main_modal_text"
+                              aria-describedby="textHelp"
+                              placeholder="<%= lang.adminModal.placeholder_bigTextUa %>" required></textarea>
+                    <label for="text"><%= lang.adminModal.bigTextEn %></label>
+                    <textarea name="bigTextEn" class="textarea resize-ta form-control" type="text" id="main_modal_text"
+                              aria-describedby="textHelp"
+                              placeholder="<%= lang.adminModal.placeholder_bigTextEn %>" required></textarea>
                 </div>
             </div>
 
             <div class="modal-footer justify-content-center">
-                <button id="new-training-clear" type="button" class="btn btn-secondary"><%=lang.adminButtons.clear%></button>
+                <button id="new-training-clear" type="button"
+                        class="btn btn-secondary"><%= lang.adminButtons.clear %></button>
                 <!--                <button id="paste_new_email" type="button" class="btn btn-warning">Вставити шаблон</button>-->
-                <button id="send_training"  class="btn" style="background-color: #20c997;"><%=lang.adminButtons.done%></button>
+                <button id="send_training" class="btn" type="submit"
+                        style="background-color: #20c997;"><%= lang.adminButtons.done %></button>
             </div>
+            </form>
+
         </div>
     </div>
 </div>
