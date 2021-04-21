@@ -8,6 +8,15 @@
 	},
 
 
+	"applicationCard" : {
+		"header" : "User application",
+		"name_surname": "Name & surname: ",
+		"phone": "Phone: ",
+		"email": "Email: ",
+		"text": "Application text: ",
+		"status": "Status: "
+	},
+
 	"adminNav": {
 		"title" : "Admin",
 		"add": "Add training"
@@ -18,6 +27,14 @@
 		"applications_list": "Applications list"
 
 	},
+
+
+	"deleteModal": {
+		"header": "Deletion",
+		"text": "You sure you want to delete?",
+		"button": "Yes"
+	},
+
 
 	"adminModal": {
 		"header": "Add new training",

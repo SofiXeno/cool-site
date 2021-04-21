@@ -33,7 +33,9 @@
             <hr id="divide">
 
             <div class="blog-card">
+
                 <div class="meta">
+
 
                     <div class="photo"></div>
                     <ul class="details">
@@ -50,6 +52,9 @@
                     </ul>
                 </div>
                 <div class="description">
+                    <button type="button" data-toggle="modal" data-target="#delete-confirm-modal" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h1>Learning to Code</h1>
                     <h2>Opening a door to the future</h2>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati
@@ -69,6 +74,47 @@
         <div class="container" id="landing-page">
             <h1 style="color: #179c74;"><%= lang.adminContent.applications_list %></h1>
             <hr id="divide">
+
+            <div class="card">
+                <div class="card-header">
+                    <%=lang.applicationCard.header%>
+                    <button type="button" data-toggle="modal" data-target="#delete-confirm-modal" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"><%=lang.applicationCard.name_surname%> sdfghj</h5>
+                    <p class="card-text"><%=lang.applicationCard.phone%> fghjk</p>
+                    <p class="card-text"><%=lang.applicationCard.email%> sdfgh</p>
+                    <p class="card-text"><%=lang.applicationCard.text%> sdfgh</p>
+
+                </div>
+                <div class="card-footer" style="color: #179c74;">
+                    <%= lang.applicationCard.status%> fghjk
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- modal for deletion  -->
+<div class="modal top fade" id="delete-confirm-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+    <div class="modal-dialog modal-sm ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><%=lang.deleteModal.header%></h5>
+                <button id="close-delete-confirm" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"><%=lang.deleteModal.text%></div>
+            <div class="modal-footer">
+                <button id="delete-confirm" type="button" class="btn btn-primary"><%=lang.deleteModal.button%></button>
+            </div>
         </div>
     </div>
 </div>

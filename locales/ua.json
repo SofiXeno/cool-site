@@ -8,6 +8,16 @@
   },
 
 
+  "applicationCard" : {
+    "header" : "Заявка користувача",
+    "name_surname": "Ім'я та прізвище: ",
+    "phone": "Телефон: ",
+    "email": "Пошта: ",
+    "text": "Текст заявки: ",
+    "status": "Статус: "
+  },
+
+
   "adminNav": {
     "title" : "Адмін",
     "add": "Додати тренінг"
@@ -17,6 +27,12 @@
     "training_list": "Список активних тренінгів",
     "applications_list": "Список заявок"
 
+  },
+
+  "deleteModal": {
+    "header": "Видалення",
+    "text": "Ви впевнені що хочете видалити?",
+    "button": "Так"
   },
 
   "adminModal": {

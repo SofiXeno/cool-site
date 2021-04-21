@@ -26,6 +26,7 @@
     ],
 
     "colors": {
+       "adminColor": "#179c74",
         "menuColor": "#17b04f",
         "tabsColor": "#6c3a8a",
         "activeTabColor": "#ffffff"
