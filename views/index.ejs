@@ -19,7 +19,7 @@
 <body>
 
 <!--Navbar -->
-<%- include('navbar', {lang:lang, page:'/', active_page: 'index'}) %>
+<%- include('navbar', {lang:lang, page:'/', active_page: 'index', colors:colors}) %>
 <!--/.Navbar -->
 
 
@@ -76,7 +76,7 @@
             </div>
             <hr id="divide">
             <div class="text-center">
-                <button type="submit" class="btn" id="more-about-trainings"><%= lang.homeContent.moreButton%></button>
+                <button class="btn" id="more-about-trainings"><a href="/trainings"><%= lang.homeContent.moreButton%></a></button>
             </div>
 
         </div>

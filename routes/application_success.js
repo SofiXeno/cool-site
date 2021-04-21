@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 const config = require('../config.json')
 const selectLang = require('./select-lang')
@@ -7,7 +7,7 @@ const selectLang = require('./select-lang')
 /* GET home page. */
 router.get('/', function(req, res, next) {
     const lan = selectLang(req.query.lang)
-    res.render('application_success.ejs',{menuTabs:config.menuTabs, lang: lan});
+    res.render('application_success.ejs',{menuTabs:config.menuTabs, lang: lan, colors:config.colors});
 });
 
 

@@ -19,16 +19,14 @@
 <body>
 
 <!--Navbar -->
-<%- include('navbar', {lang:lang, page:'/application_success', active_page: 'index'}) %>
+<%- include('navbar', {lang:lang, page:'/application_success', active_page: 'index', colors:colors}) %>
 <!--/.Navbar -->
 
 <hr/>
 
 
 <div class="container" id="landing-page">
-    <h3 style="text-align: center"><%=lang.application.confirmed%></h3>
-    <h3 style="text-align: center"><%=lang.application.need_confirmation%></h3>
-
+    <h3 style="text-align: center"><%=message%></h3>
 </div>
 
 

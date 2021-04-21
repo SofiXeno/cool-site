@@ -1,5 +1,5 @@
-const ua = require('../locales/ua.json')
-const en = require('../locales/en.json')
+const ua = require('../languages/ua.json')
+const en = require('../languages/en.json')
 
 
 module.exports = (lang) => {

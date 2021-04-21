@@ -1,0 +1,162 @@
+{
+  "title": "Cool site",
+  "localeName": "en",
+  "application": {
+    "confirmed": "Congratulations! Your request has been confirmed automatically.",
+    "need_confirmation": "To confirm the application, check your e-mail.",
+    "confirm_success": "Your request was confirmed succesfully."
+  },
+  "adminNav": {
+    "title": "Admin",
+    "add": "Add training"
+  },
+  "confirmationMessage" : "To confirm your request, please follow the link: ",
+  "adminContent": {
+    "training_list": "Active trainings list",
+    "applications_list": "Applications list"
+  },
+  "adminModal": {
+    "header": "Add new training",
+    "name": "Training name",
+    "placeholder_name": "Write new training name",
+    "about": "Couple of words about the future training",
+    "placeholder_about": "Write something",
+    "author": "Author",
+    "placeholder_author": "Who is the author of the training",
+    "date": "Date",
+    "placeholder_date": "Enter a start date",
+    "text": "Description",
+    "placeholder_text": "Write main training description"
+  },
+  "adminButtons": {
+    "clear": "Clear",
+    "done": "Done!"
+  },
+  "menuNav": {
+    "index": "Home",
+    "trainings": "Trainings",
+    "about": "About us"
+  },
+  "homeContent": {
+    "text1": "Welcome to our site!",
+    "text2": "Which programming language is best to learn in 2021?",
+    "text3": "What should good text optimized for search engines look like?",
+    "text4": "Want to learn how to write apps for iPhone and iPad?",
+    "text5": "Don't know where to start?",
+    "text6": "All this can be found only with us! Together with our Cool site \n You will master programming!",
+    "text7": "Master any programming language in a short time just sitting at home! Join now! \n Our trainings are waiting for you!",
+    "moreButton": "More about trainings"
+  },
+  "aboutContent": {
+    "text1": "About Cool Site",
+    "text2": "© Xenofontova Sofia",
+    "text3": "Chatter is worth nothing. Show me the code.",
+    "text4": "Linus Torvalds",
+    "text5": "Master any programming language in a short time just sitting at home! Join now! Our trainings are waiting for you!"
+  },
+  "form": {
+    "header": "Application form",
+    "name": {
+      "label": "Name & Surname",
+      "placeholder": "Enter last name and first name",
+      "error": "Name & Surname field cannot be empty"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter your Email",
+      "error": "Invalid email!"
+    },
+    "phone": {
+      "label": "Phone number",
+      "placeholder": "+ (380)",
+      "error": "Invalid phone number!"
+    },
+    "textarea": {
+      "label": "Application text",
+      "placeholder": "The text of your application ...",
+      "error": "The request text field cannot be empty"
+    },
+    "button": "Submit Request",
+    "success_msg": {
+      "admin": "After the application is processed by the administrator, you will receive an email",
+      "no": "A confirmation email has been sent to you"
+    },
+    "fail_msg": "A request has already been sent to this email address",
+    "preText": "form.preText"
+  },
+  "trainings": {
+    "showMore": "Read more",
+    "showLess": "Hide details"
+  },
+  "admin": {
+    "main": {
+      "toForms": "Manage forms",
+      "toTrainings": "Manage trainings"
+    },
+    "forms": {
+      "button": {
+        "toAdmin": "To admin page",
+        "toFormsTable": "To form table"
+      },
+      "table": {
+        "title": "New forms",
+        "name": "Name",
+        "surname": "Surname",
+        "email": "Email",
+        "actions": "Actions"
+      },
+      "details": {
+        "name": "Name",
+        "surname": "Surname",
+        "email": "Email",
+        "phone": "Phone",
+        "addtext": "Additional text"
+      }
+    },
+    "trainings": {
+      "button": {
+        "toAdmin": "To admin page",
+        "toTrainingsTable": "To trainings table",
+        "addTraining": "Add training",
+        "send": "Send"
+      },
+      "table": {
+        "tableTitle": "Trainings",
+        "title": "Title",
+        "actions": "Actions",
+        "slogan": "Slogan",
+        "editB": "Edit",
+        "deleteB": "Delete",
+        "infoB": "Info",
+        "confirmB": "Confirm",
+        "rejectB": "Reject"
+      },
+      "form": {
+        "pageTitle": {
+          "add": "Adding training",
+          "update": "Updating training"
+        },
+        "title": "Title",
+        "slogan": "Slogan",
+        "description": "Description"
+      }
+    },
+    "table": {
+      "title": "Title",
+      "slogan": "Slogan",
+      "actions": "Actions"
+    }
+  },
+  "less_button": "Collapse",
+  "more_button": "Details...",
+  "email": {
+    "title": "Welcome to our family",
+    "content": "Congrats on joining us. Your confirmation link: ",
+    "confirmed": "Your membership was confirmed by our admin",
+    "rejected": "Your membership was rejected by our admin"
+  },
+  "add": {
+    "notFound": "Page not found",
+    "confirmed": "Account confirmed"
+  }
+}

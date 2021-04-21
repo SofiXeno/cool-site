@@ -1,6 +1,6 @@
 {
     "domain": "cooltraining.com.ua",
-    "adminConfirmation": false,
+    "adminConfirmation": true,
 
     "menuTabs": [
         {
@@ -26,7 +26,7 @@
     ],
 
     "colors": {
-        "menuColor": "#17b04f",
+        "menuColor": "#20c997",
         "tabsColor": "#6c3a8a",
         "activeTabColor": "#ffffff"
     }
